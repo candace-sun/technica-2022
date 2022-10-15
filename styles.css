@@ -1,34 +1,55 @@
 body {
-  background-color: lightblue;
+  background-color: white;
 }
 
 h1 {
-  color: white;
+  background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
 p {
-  font-family: verdana;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 30px;
+}
+
 .button_grid {
-display: grid;
+  display: grid;
   justify-content: center;
   align-content: center;
 }
 
 .form_button {
-padding: 30px 30px;
-width: 40vw;
-margin: 10px;
-background-color:gray;
-border:none;
-font-size: 20px;
+  padding: 30px 30px;
+  width: 40vw;
+  margin: 10px;
+  background-color: gray;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color:white;
+  background-image: linear-gradient(120deg, #40dee8, #fd7bac);
+  box-sizing: border-box;
 }
 
-.form_button:hover {cursor: pointer;}
+.form_button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
 
 .form_button:focus {
-background-color:white;
+  background-image: linear-gradient(120deg, white, white);
+  color: black;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #40dee8, #fd7bac);
 }
