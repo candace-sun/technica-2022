@@ -6,8 +6,8 @@ h1 {
   background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
   font-family: 'Roboto Mono', monospace;
+  display: inline-block;
 }
 
 p {
