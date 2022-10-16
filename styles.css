@@ -10,6 +10,10 @@ h1 {
   display: inline-block;
 }
 
+h2 {
+  font-family: "Roboto Mono", monospace;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -52,4 +56,12 @@ body {
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to left, #40dee8, #fd7bac);
+}
+
+a {
+  background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
 }
