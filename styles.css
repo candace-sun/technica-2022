@@ -56,13 +56,6 @@ body {
   border-image-source: linear-gradient(to right, #40dee8, #fd7bac);
 }
 
-a {
-  background: -webkit-linear-gradient(60deg, #40dee8, #fd7bac);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Courier New", Courier, monospace;
-  display: inline-block;
-}
 
 .logo {
   background: linear-gradient(120deg, #40dee8, #fd7bac);
@@ -219,4 +212,15 @@ h3 {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+a > button { color:white; }
+
+
+a_grad {
+  background: -webkit-linear-gradient(60deg, #40dee8, #fd7bac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
 }
