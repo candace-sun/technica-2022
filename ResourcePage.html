@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h2 {
+	background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  font-size: 30px; 
+}
+h3 {
+	margin-top: -20px; 
+	color: white; 
+	font-family: 'Roboto Mono', monospace; 
+}
+p {
+	font-family: 'Robot', sans-serif; 
+	font-size: 15px; 
+}
+.header {
+	padding-top:2px; 
+	padding-bottom:2px; 
+	padding-left: 20px;  
+	text-align: left; 
+	outline: none; 
+	background: #58427c;
+}
+.round {
+	background: #58427c;  
+	border: 2px; 
+	cursor: pointer; 
+	font-family:'Robot Mono', monospace; 
+	color: white; 
+	outline: none;  
+	width:200px; 
+}
+
+.links {
+	font-size:15px; 
+	font-family:'Robot Mono', monospace; 
+}
+.collapsible {
+  background-color: #777;
+  background-image: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace; 
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+	<h2>Resource Page</h2>
+	<h3>Click on your given coding language to learn more.</h3>
+</div>
+	
+
+<button class="collapsible">HTML</button>
+<div class="content">
+  <p>HTML or HyperText MarkUp Language is great for structuring your website. Click on the links below to learn more about HTML and begin creating your first website today! </p>
+  <div class="links">
+  <a href="https://www.hostinger.com/tutorials/what-is-html"><button class="round">More on HTML</button></a>
+  <br>
+  <a href="https://www.w3schools.com/html/html_intro.asp"><button class="round">HTML Coding Tutorial</button></a>
+<br> 
+<br>
+</div>
+</div>
+
+<button class="collapsible">CSS</button>
+<div class="content">
+  <p>CSS or Cascading Style Sheets is great for designing and laying out your website. 
+	  Click on the links below to learn more about CSS and begin designing your first website! </p>
+	  <div class="links">
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS#:~:text=CSS%20(Cascading%20Style%20Sheets)%20is,animations%20and%20other%20decorative%20features.">
+			<button class="round">More on CSS</button></a>
+		<br>
+		<a href="https://www.w3schools.com/css/css_intro.asp"><button class="round">CSS Coding Tutorial</button></a>
+	  <br> 
+	  <br>
+	  </div>
+</div>
+
+<button class="collapsible">JavaScript</button>
+<div class="content">
+  <p>JavaScript is great for creating interactive websites and can even let you make games for your 
+	  website. Click on the links below to learn more about JavaScript and start coding today!</p>
+	  <div class="links">
+		<a href="https://javascript.info/intro"><button class="round">More on JavaScript</button></a>
+		<br>
+		<a href="https://www.w3schools.com/js/js_intro.asp"><button class="round">JavaScript Coding Tutorial</button></a>
+	  <br> 
+	  <br>
+	  </div>
+
+</div>
+
+<button class="collapsible">Python</button>
+<div class="content">
+  <p>Python has many great uses including web and game development, data visualization and analysis. 
+	  Click on the links below to learn more about Python and start coding today! </p>
+	  <div class="links">
+		<a href="https://www.python.org/about/gettingstarted/"><button class="round">More on Python</button></a>
+		<br>
+		<a href="https://www.w3schools.com/python/python_intro.asp"><button class="round">Python Coding Tutorial</button></a>
+	  <br> 
+	  <br>
+	  </div>
+</div>
+<button class="collapsible">Java</button>
+<div class="content">
+  <p>Java is great for creating applications and computing. Click on the links below to learn more
+	  about Java and start coding today! </p>
+	  <div class="links">
+		<a href="https://www.javatpoint.com/what-is-java-used-for"><button class="round">More on Java</button></a>
+		<br>
+		<a href="https://www.w3schools.com/java/java_intro.asp"><button class="round">Java Coding Tutorial</button></a>
+	  <br> 
+	  <br>
+	  </div>
+</div>
+<button class="collapsible">C++</button>
+<div class="content">
+  <p>C++ is great for developing browsers, games, and applications. Click on the link below
+	  to learn more about Java and start coding today!</p>
+	  <div class="links">
+		<a href="https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for/"><button class="round">More on C++</button></a>
+		<br>
+		<a href="https://www.w3schools.com/cpp/cpp_intro.asp"><button class="round">C++ Coding Tutorial</button></a>
+	  <br> 
+	  <br>
+	  </div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
