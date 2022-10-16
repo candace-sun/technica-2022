@@ -224,3 +224,7 @@ a_grad {
   font-family: "Courier New", Courier, monospace;
   display: inline-block;
 }
+
+h2_black {
+color:black;
+}
