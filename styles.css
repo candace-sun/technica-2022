@@ -3,24 +3,24 @@ body {
 }
 
 h1 {
-  background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+  background: -webkit-linear-gradient(60deg, #40dee8, #fd7bac);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: inline-block;
-  margin:20px;
+  margin: 20px;
 }
 
 p {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px; 
-  margin:20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin: 20px;
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
-  margin:0px;
+  margin: 0px;
 }
 
 .button_grid {
@@ -35,16 +35,16 @@ body {
   margin: 10px;
   background-color: gray;
   border: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
-  color:white;
+  color: white;
   background-image: linear-gradient(120deg, #40dee8, #fd7bac);
   box-sizing: border-box;
 }
 
 .form_button:hover {
   cursor: pointer;
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .form_button:focus {
@@ -56,137 +56,135 @@ body {
   border-image-source: linear-gradient(to right, #40dee8, #fd7bac);
 }
 
-
-
 a {
-  background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+  background: -webkit-linear-gradient(60deg, #40dee8, #fd7bac);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: inline-block;
 }
 
-  .logo {
-    background: linear-gradient(120deg, #40dee8, #fd7bac);
-    padding: 12px 30px;
-    border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-    transition: .4s;
-    cursor: pointer;
-  }
-  .menu-bar {
-    background-color: #5f0a40;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-  
-  }
-  
-  .menu-bar ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .menu-bar ul li {
-    /* width: 120px; */
-    padding: 10px 30px;
-    /* text-align: center; */
-  
-    position: relative;
-  }
-  
-  .menu-bar ul li a {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-  
-    transition: all 0.3s;
-  }
-  
-  .menu-bar ul li a:hover {
-    color: #fd7bac;
-    transition: .3s;
-    padding: 8px 16px;
-    border-radius: 99px;
-    background-color: white;
-  }
-  
-  .fas {
-    float: right;
-    margin-left: 10px;
-    padding-top: 3px;
-  }
-  
-  /* dropdown menu style */
-  .dropdown-menu {
-    display: none;
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #5f0a40;
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu ul {
-    display: block;
-    margin: 10px;
-  }
-  .menu-bar ul li:hover .dropdown-menu ul li {
-    width: 150px;
-    padding: 10px;
-  }
-  
-  .hero {
-    height: calc(100vh - 80px);
-    background-image: url(./bg.jpg);
-    background-position: center;
-  }
+.logo {
+  background: linear-gradient(120deg, #40dee8, #fd7bac);
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.menu-bar {
+  background-color: #5f0a40;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: #fd7bac;
+  transition: 0.3s;
+  padding: 8px 16px;
+  border-radius: 99px;
+  background-color: white;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #5f0a40;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
 
 h2 {
-	background: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
-	-webkit-background-clip: text;
+  background: -webkit-linear-gradient(60deg, #40dee8, #fd7bac);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: inline-block;
-  font-size: 30px; 
+  font-size: 30px;
+  margin: 20px;
 }
 h3 {
-	margin-top: -20px; 
-	color: white; 
-	font-family: 'Courier New', Courier, monospace;
+  margin-top: -20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 .header {
-	padding-top:2px; 
-	padding-bottom:2px; 
-	padding-left: 20px;  
-	text-align: left; 
-	outline: none; 
-	background: #58427c;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+  text-align: left;
+  outline: none;
+  background: #58427c;
 }
 .round {
-	background: #58427c;  
-	border: 2px; 
-	cursor: pointer; 
-	font-family:'Courier New', Courier, monospace;
-	color: white; 
-	outline: none;  
-	width:200px; 
+  background: #58427c;
+  border: 2px;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  outline: none;
+  width: 200px;
 }
 
 .links {
-	font-size:15px; 
-	font-family:'Courier New', Courier, monospace; 
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
 }
 .collapsible {
   background-color: #777;
-  background-image: -webkit-linear-gradient(60deg,#40dee8, #fd7bac);
+  background-image: -webkit-linear-gradient(60deg, #40dee8, #fd7bac);
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -195,15 +193,16 @@ h3 {
   text-align: left;
   outline: none;
   font-size: 15px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   background-color: #555;
 }
 
 .collapsible:after {
-  content: '\002B';
+  content: "\002B";
   color: white;
   font-weight: bold;
   float: right;
