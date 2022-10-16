@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Courier New', Courier, monospace;	
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+   
+  }
+  
+  .logo {
+    background: linear-gradient(120deg, #40dee8, #fd7bac);
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: .4s;
+    cursor: pointer;
+  }
+  .menu-bar {
+    background-color: #5f0a40;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: #fd7bac;
+    transition: .3s;
+    padding: 8px 16px;
+    border-radius: 99px;
+    background-color: white;
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #5f0a40;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .hero {
+    height: calc(100vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: center;
+  }
+  .content{
+    position: absolute;
+    top: 200%;
+    text-align: left;
+    right: 200%;
+    color: #5f0a40;
+    
+  }
+  h2{
+    color: #5f0a40;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: auto;
+  }
+ p{
+    color: #5f0a40;
+    width: 80%;
+    margin-left: 2%;
+    margin-right: auto;
+ }
+ h3{
+    color: #5f0a40;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: auto;
+  }
+ p2{
+    color: #5f0a40;
+    width: 80%;
+    margin-left: 2%;
+    margin-right: auto;
+ }
